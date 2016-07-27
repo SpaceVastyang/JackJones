@@ -1,0 +1,116 @@
+<div class="all-products">
+
+    <!--更多分类列表-->
+    <p class="all-location"><a href="#" ng-click="goToHome()">首页</a> / <a href="">所有商品</a> / <a href="">全价新品</a> / 早春全价商品</p>
+    <div class="discount">
+        <img src="./images/allProduct/6fa8b0c5-beba-42fc-829a-f6309041a1b1.jpg" alt="discount"/>
+    </div>
+    <div class="clear"></div>
+
+    <div class="all-product-content fl">
+        <div class="all-list">
+            <div class="product-list-title">
+                <h5 style="margin-bottom: 0">按品类筛选</h5>
+                <div class="product-list-container">
+                    <p class="all-title checked"><a href=""><i class="close-all"></i></a>全部</p>
+                    <ul>
+                        <li>
+                            <a href=""><i class="close-all"></i></a>
+                            <a href="" class="checked">全价新品</a>
+                            <ul>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春短裤</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春卫衣</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春配饰</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春休闲裤</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春牛仔裤</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春西服</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春毛呢皮衣</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春风衣外套</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春棉服</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春针织衫</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春衬衫</a></li>
+                                <li><a href=""><i class="open-all"></i></a><a href="">早春T恤polo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">热销推荐</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">新品到店</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">海报同款</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">T恤/POLO</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">外套/夹克</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">气质衬衫</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">潮流牛仔裤</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">简约休闲裤</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">精选配饰</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">产品系列</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">价格区间</a></li>
+                        <li><a href=""><i class="open-all"></i></a><a href="">加购赠品</a></li>
+                    </ul>
+                </div>
+                <div class="product-list-title"><h5>按尺码筛选</h5></div>
+                <div class="product-list-title"><h5>按颜色筛选</h5></div>
+                <div class="product-list-title"><h5>按场合筛选</h5></div>
+                <div class="advertisement">
+                    <a href=""><img src="./images/allProduct/bc4798c3-dd43-43e6-b485-9477c2b409fa.jpg" alt="ad1"/></a>
+                    <a href=""><img src="./images/allProduct/a0cd77f2-49ad-400f-baa5-3cf9600f2326.jpg" alt="ad2"/></a>
+                    <a href=""><img src="./images/allProduct/6cbac13b-7af4-433b-b813-7bf4762a763d.jpg" alt="ad3"/></a>
+                    <a href=""><img src="./images/allProduct/7ab186eb-fd74-4ab7-9dff-3f2fc8c058a9.jpg" alt="ad4"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--产品更新区域-->
+    <div class="product-container fr">
+        <div class="show-operate">
+            <a href="" class="bk collocation">搭配</a>
+            <label class="order-by">
+                <span>排序根据：</span>
+                <select name="order">
+                    <option>上架时间（降序）</option>
+                    <option>价格（降序）</option>
+                    <option>价格（升序）</option>
+                    <option>销售量（降序）</option>
+                </select>
+            </label>
+            <label class="page-show">
+                <span>每页展示数量：</span>
+                <select name="show-count">
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                    <option value="60">60</option>
+                </select>
+            </label>
+            <p class="all-count"><span>616</span>个结果</p>
+            <p class="page-location"><span class="currentPage">1</span>/<span class="maxPage">6</span></p>
+        </div>
+
+        <!--产品区-->
+    <div class="commodities">
+        <div class="commodity" ng-repeat="commodityDatas in allProductDatas">
+            <div class="commodity-container">
+                <div class="commodity-img" ng-click="goToDetails()">
+                    <img commodity-hover ng-src={{commodityDatas.commodity.show}}>
+                    <div class="look">快速查看</div>
+                    <div class="tag-new">NEW</div>
+                </div>
+                <p ng-click="goToDetails()" class="commodity-title">{{commodityDatas.commodity.title}}</p>
+                <p>¥ <span class="product-price">{{commodityDatas.commodity.price}}</span>.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="product-container-bottom">
+        <p class="all-count"><span>616</span>个结果</p>
+        <div class="all-page fr">
+            <div class="each-page-btn pre-page"></div>
+            <div class="each-page-btn btn-checked">1</div>
+            <div class="each-page-btn">2</div>
+            <div class="each-page-btn next-page"></div>
+        </div>
+    
+    </div>
+    </div>
+    <!--产品更新区域-->
+</div>

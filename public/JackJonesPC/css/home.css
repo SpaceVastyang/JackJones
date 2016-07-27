@@ -1,0 +1,83 @@
+.home {
+    padding-top: 10px;
+}
+
+/*head*/
+
+.head {
+    overflow: hidden;
+}
+.head div {
+    font-size: 0;
+}
+.head-left {
+    width: 615px;
+}
+.head-right {
+    width: 335px;
+}
+
+/*hot*/
+
+.hot {
+    font-size: 0;
+}
+.hot img {
+    cursor: pointer;
+}
+/*new-product*/
+
+.new-products {
+    font-size: 0;
+}
+
+/*advise*/
+
+.recommend {
+    font-size: 0;
+}
+
+/*轮播*/
+
+.slider {
+    width: 950px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+.sliderImg {
+    opacity: 0
+}
+.mask {
+    position: relative;
+}
+.slider-container {
+    width: 950px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-container li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.prev, .next {
+    width: 50px;
+    height: 105px;
+    position: absolute;
+    top: 100px;
+    opacity: .6;
+    cursor: pointer;
+    display: none;
+}
+.prev {
+    left: 0;
+    background: url("../images/home/allicon24.png") 0 130px;
+}
+.next {
+    right: 0;
+    background: url("../images/home/allicon24.png") -47px 130px;
+}
+.prev:hover, .next:hover {
+    opacity: 1;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" href="./css/home.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/register.css">
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<link rel="stylesheet" type="text/css" href="./css/allProduct.css">
+	<link rel="stylesheet" type="text/css" href="./css/shoppingCart.css">
+	<link rel="stylesheet" type="text/css" href="./css/details.css">
+</head>
+<body>
+	<!--头部分-->
+	<div class="header" ng-controller="mainController">
+		<div class="location">
+        	<p class="fl">您的位置：<i class="china"></i>中国 / RMB </p>
+        	<p class="join fr" session-username>
+        		<a href="" class="bk tl" ng-click="goToLogin()">登录</a> /
+        		<a href="" class="bk tl" ng-click="goToRegister()">注册</a>
+        	</p>
+    	</div>
+
+    	<div class="title">
+       		<div class="logo fl">
+       			<a href="./index.html">
+       				<img src="images/index/logo.jpg" alt="logo"/>
+       			</a>
+       		</div>
+        	<div class="search fr">
+            	<a href="" class="bk tl" ng-click="goToCart()">购物车[ <span>0</span> ]</a>
+	            <label class="searchLabel">
+	            	<input type="text" placeholder="搜索" class="searchAll" search-commodity/>
+	            	<img src="./images/index/searchIcon.png" alt="searchIcon"/>
+	            </label>
+       		</div>
+    	</div>
+
+    	<div class="menu">
+       		<ul class="block-menu">
+            	<li class="index">
+	            	<a href="./index.html" class="three-d">首页
+	                    <!-- <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">首页</span>
+	                        <span class="back">首页</span>
+	                    </span> -->
+	                </a>
+            	</li>
+	            <li class="all-product">
+	                <a href="" class="three-d" ng-click="goToAllProduct()">所有商品
+	                 <!--    <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">所有商品</span>
+	                        <span class="back">所有商品</span>
+	                    </span> -->
+	                </a>
+	                <ul class="AllProductSlecete">
+	                    <li class="first">
+	                       <h5>早春全价新品</h5>
+	                        <p>早春风衣外套</p>
+	                        <p>早春毛呢皮衣</p>
+	                        <p>早春针织衫</p>
+	                        <p>早春衬衫</p>
+	                        <p>早春牛仔裤</p>
+	                        <p>早春休闲裤</p>
+	                        <p>早春西服</p>
+	                        <p>早春卫衣</p>
+	                        <p>早春T恤polo</p>
+	                        <p>早春配饰</p>
+	                        <p>早春短裤</p>
+	                    </li>
+	                    <li>
+	                       <h5>早春T恤polo</h5>
+	                        <p>短袖T恤</p>
+	                        <p>短袖POLO</p>
+	                        <p>印花款式</p>
+	                        <p>撞色条纹</p>
+	                        <p>简约纯色</p>
+	                        <p>星战限量版</p>
+	                    </li>
+	                    <li>
+	                       <h5>早春外套</h5>
+	                        <p>夹克外套</p>
+	                        <p>风衣防风服</p>
+	                        <p>牛仔夹克</p>
+	                        <p>PU夹克</p>
+	                        <p>棒球夹克</p>
+	                        <p>西服外套</p>
+	                        <p>毛呢皮衣</p>
+	                    </li>
+	                    <li>
+	                       <h5>内搭上装</h5>
+	                        <p>短袖衬衫</p>
+	                        <p>长袖衬衫</p>
+	                        <p>七分袖衬衫</p>
+	                        <p>印花/提花衬衫</p>
+	                        <p>纯色/牛仔衬衫</p>
+	                        <p>格纹/条纹衬衫</p>
+	                        <p>早春卫衣</p>
+	                        <p>早春针织衫</p>
+	                    </li>
+	                    <li>
+	                       <h5>裤装</h5>
+	                        <p>早春牛仔裤</p>
+	                        <p>早春休闲裤</p>
+	                        <p>修身版型牛仔裤</p>
+	                        <p>小脚口版型牛仔裤</p>
+	                        <p>宽松直筒牛仔裤</p>
+	                    </li>
+	                    <li>
+	                       <h5>配饰</h5>
+	                        <p>早春配饰</p>
+	                        <p>早春鞋履</p>
+	                        <p>精选腰带</p>
+	                        <p>时尚内裤</p>
+	                        <p>帽子背包</p>
+	                    </li>
+	                    <li>
+	                       <h5>价格区间</h5>
+	                        <p>201-300</p>
+	                        <p>301-400</p>
+	                        <p>401-500</p>
+	                        <p>501-600元</p>
+	                        <p>601-800元</p>
+	                        <p>801-1000元</p>
+	                        <p>1000元以上</p>
+	                    </li>
+	                    <li>
+	                       <h5>产品系列</h5>
+	                        <p>CODE系列</p>
+	                        <p>STUD IO系列</p>
+	                        <p>ORIGINAL系列</p>
+	                        <p>ESSENTIAL系列</p>
+	                    </li>
+	                </ul>
+	            </li>
+	            <li class="new-product">
+	                <a href="" class="three-d">新品到店
+	                   <!--  <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">新品到店</span>
+	                        <span class="back">新品到店</span>
+	                    </span> -->
+	                </a>
+	            <!--     <ul class="new-productSlecete">
+	                    <li><span>03月29日上新</span></li>
+	                    <li><span>03月25日上新</span></li>
+	                    <li><span>03月22日上新</span></li>
+	                    <li><span>03月18日上新</span></li>
+	                    <li><span>03月15日上新</span></li>
+	                    <li class="menu-last"><span>03月11日上新</span></li>
+	                </ul> -->
+	            </li>
+	            <li class="suggest">
+	                <a href="" class="three-d">热销推荐
+	                    <!-- <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">热销推荐</span>
+	                        <span class="back">热销推荐</span>
+	                    </span> -->
+	                </a>
+	                <!-- <ul>
+	                    <li><span>首降7折</span></li>
+	                    <li><span>全新牛仔型格</span></li>
+	                    <li><span>星战限量鞋品</span></li>
+	                    <li class="menu-last"><span>星战限量版</span></li>
+	                </ul> -->
+	            </li>
+	            <li class="pop">
+	                <a href="" class="three-d">潮流专辑
+	                  <!--   <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">潮流专辑</span>
+	                        <span class="back">潮流专辑</span>
+	                    </span> -->
+	                </a>
+	                <!-- <ul>
+	                    <li>丹宁夹克的N+1可能</li>
+	                    <li>早春新品唤醒时尚细胞</li>
+	                    <li>潮流态度 城市夹克</li>
+	                    <li>早春新款 新鲜出炉</li>
+	                    <li>牛仔夹克 随型释放</li>
+	                    <li>弹力牛仔 “真”自由</li>
+	                    <li class="menu-last">海报同款 抢先购</li>
+	                </ul> -->
+	            </li>
+	            <li><a href="" class="three-d">杂志精选
+	                   <!--  <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">杂志精选</span>
+	                        <span class="back">杂志精选</span>
+	                    </span> -->
+	            </a></li>
+	            <li class="same">
+	                <a href="" class="three-d">海报同款
+	                   <!--  <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">海报同款</span>
+	                        <span class="back">海报同款</span>
+	                    </span> -->
+	                </a>
+	               <!--  <ul>
+	                    <li class="menu-last">春季海报明星款</li>
+	                </ul> -->
+	            </li>
+	            <li class="members">
+	                <a href="" class="three-d">会员中心
+	                   <!--  <span aria-hidden="true" class="three-d-box">
+	                        <span class="front">会员中心</span>
+	                        <span class="back">会员中心</span>
+	                    </span> -->
+	                </a>
+	            </li>
+        	</ul>
+    	</div>
+
+    	<div class="fixed-operate">
+        	<a class="shop-car" ng-click="goToCart()">购物车</a>
+        	<a class="hot-line">客服热线</a>
+        	<a class="member">会员中心</a>
+        	<a class="go-top" ng-click="toTop()">返回顶部</a>
+    	</div>
+	</div>
+	<div class="clear"></div>
+
+	<!--内容部分-->
+
+	<div class="content" ui-view></div>
+
+	<!--页尾部分-->
+
+	<div class="clear"></div>
+	<div class="footer">
+		<div class="footer-logo">
+			<a href="#"><img src="images/index/96599f91-79f0-4583-aa6e-c556aaef624e.jpg" alt=""/></a>
+		</div>
+	    <div class="footer-menu">
+	        <ul>
+	            <li><a href="">风衣外套</a></li>
+	            <li><a href="">衬衫</a></li>
+	            <li><a href="">针织衫</a></li>
+	            <li><a href="">牛仔裤</a></li>
+	            <li><a href="">休闲裤</a></li>
+	            <li><a href="">西服</a></li>
+	            <li><a href="">毛呢皮衣</a></li>
+	            <li><a href="">配饰鞋履</a></li>
+	        </ul>
+	    </div>
+	    <div class="info">
+	        <ul>
+	            <li>
+	                <h5>会员专区</h5>
+	                <p>会员中心</p>
+	                <p>会员制度</p>
+	                <p>如何使用积分</p>
+	            </li>
+	            <li>
+	                <h5>配送流程</h5>
+	                <p>配送说明</p>
+	                <p>退货说明</p>
+	            </li>
+	            <li>
+	                <h5>关于我们</h5>
+	                <p>JACK&JONES</p>
+	                <p>绫致时装</p>
+	                <p>工作机会</p>
+	            </li>
+	            <li>
+	                <h5>帮助中心</h5>
+	                <p>常见问题</p>
+	                <p>网站声明</p>
+	                <p>联系我们</p>
+	                <p>门店地址</p>
+	                <p>网站地图</p>
+	            </li>
+	            <li>
+	                <h5>关注我们</h5>
+	                <p><img src="./images/register/sinaIconColor.jpg" alt="sina" class="sina"/>新浪微博</p>
+	                <p class="weChatContainer">
+	                    <img src="./images/register/weixinIcon.jpg" alt="weChat" class="weChat"/>微信
+	                    <img src="./images/index/erweima.jpg" alt="two-dimension code" class="two-dimension-code"/>
+	                </p>
+	            </li>
+	            <li class="borderNone">
+	                <h5>安全购物</h5>
+	                <p><img src="images/index/e1848738-34cb-4cf9-ae04-d54f7503e7ad.jpg" alt=""/></p>
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="clear"></div>
+	    <div class="brand">
+	        <ul>
+	            <li><img src="images/index/d5dac9c8-0fb2-47ca-9fc8-88fde1d8c4d1.jpg" alt=""/></li>
+	            <li><img src="images/index/e9567754-1518-4b3e-bb0a-4b662b0b4ec2.jpg" alt=""/></li>
+	            <li><img src="images/index/b40286a3-d957-4d59-8cc1-8b354b7b0a3c.jpg" alt=""/></li>
+	        </ul>
+	    </div>
+	    <div class="brands">
+	        <p><img src="images/index/72c7137b-b9df-4979-8184-5fd6556c4673.jpg" alt=""/></p>
+	    </div>
+	    <p>© 2013 Bestseller. All Rights Reserved 津ICP备12007886号 - 1</p>
+	    <p>绫致时装（天津）有限公司</p>
+	</div>
+
+	<!--引入js-->
+
+	<script type="text/javascript" src="./js/angular-1.2.19/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-1.2.19/angular-ui-router.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./home/home.js"></script>
+	<script type="text/javascript" src="./register/register.js"></script>
+	<script type="text/javascript" src="./login/login.js"></script>
+	<script type="text/javascript" src="./allProduct/allProduct.js"></script>
+	<script type="text/javascript" src="./shoppingCart/shoppingCart.js"></script>
+	<script type="text/javascript" src="./details/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/*登录部分*/
+.login-container {
+    overflow: hidden;
+}
+.tag {
+    width: 40px;
+    display: inline-block;
+}
+.login-title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #dddddd;
+    background: #000;
+    font-weight: bold;
+    margin: 5px 0 20px 0;
+}
+.login-page {
+    width: 50%;
+    border-right: 1px solid #999988;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.login-page h2 {
+    margin: 30px 0;
+}
+.login-page input {
+    padding-left: 5px;
+    height: 18px;
+}
+.idCode {
+    width: 100px;
+}
+.login-page img {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.login-page>form>div {
+    padding: 5px;
+}
+.password-tips {
+    color: green;
+    padding-top: 5px;
+}
+
+/*登录按钮*/
+.loginBtn {
+    text-align: center;
+    background: #000;
+    float: left;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+.loginBtn input {
+    width: 56px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    background: #000;
+    outline: none;
+}
+
+
+/*注册部分*/
+.register-page {
+    padding-top: 10px;
+}
+.register-page h2 {
+    padding: 30px 0;
+}
+.register-page p {
+    padding-bottom: 15px;
+}
+.registerBtn {
+    text-align: center;
+    background: #000;
+    float: left;
+    margin-top: 10px;
+}
+.registerBtn input {
+    width: 105px;
+    height: 30px;
+    line-height: 20px;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    background: #000;
+    outline: none;
+}

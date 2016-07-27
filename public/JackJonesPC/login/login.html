@@ -1,0 +1,26 @@
+<div class="login-container">
+    <p><span>首页</span> / <span>登录</span></p>
+    <p class="login-title">登录</p>
+    <div class="login-page fl">
+        <h2>会员登录</h2>
+        <form name="loginForm">
+            <div>
+                <label><span class="tag">账号：</span><input type="text" ng-model="loginUser.username"/><span class="tips">请输入手机号</span></label>
+            </div>
+            <div>
+                <label><span class="tag"></span><input type="text" value="请输入验证码" class="idCode" /><img src="./images/login/Kaptcha.jpg" alt=""/></label>
+            </div>
+            <div>
+                <label><span class="tag">密码：</span><input type="password" ng-model="loginUser.password"/><span class="tips">请输入密码</span></label>
+            </div>
+            <div class="loginBtn"><input type="button" value="登录" ng-click="loginSubmit()"/></div>
+            <div class="clear"></div>
+            <p>如果您是SELECTED，ONLY或 VERO MODA会员，可直接输入登录账号。</p>
+        </form>
+    </div>
+    <div class="register-page fr">
+        <h2>还不是JACK & JONES俱乐部会员？</h2>
+        <p>立刻加入会员，您的每笔消费均可累计积分，尽享时尚便捷的购物体验</p>
+        <div class="registerBtn"><input type="button" value="新用户注册" ng-click="goToRegister()"/></div>
+    </div>
+</div>

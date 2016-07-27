@@ -1,0 +1,48 @@
+<div class="register-container">
+    <p>首页 / 登录</p>
+    <p class="reg-first">注册</p>
+    <ul class="reg-two">
+        <li>1 填写用户注册</li>
+        <li style="border-bottom: 12px solid #e5e5e5;width: 477px;">2 注册完成</li>
+    </ul>
+    <div class="reg-three">
+        <h1 class="reg-h1">从这里开启你的会员之旅</h1>
+        <ul>
+            <li>
+                <p>姓名 <span>*</span></p>
+                <input class="reg-input username" type="text" placeholder="请填写您的真实姓名"/>
+                <p class="password-tips">请填写姓名！</p>
+            </li>
+            <li>
+                <p>性别 <span>*</span><label><input type="radio" name="gender" class="male" checked/>男</label> <label><input type="radio" name="gender"/>女</label></p>
+            </li>
+            <li>
+                <p>生日 <span>*</span></p>
+                <label><input class="reg-input" type="date" id="birthday"/></label>
+                <label for="birthday" class="birthday"><img src="./images/register/birthday.jpg" alt="birthday"/></label>
+            </li>
+            <li>
+                <p>手机号码 <span>*</span></p>
+                <label><input  class="reg-input phoneNumber" type="text" placeholder="如果您已在门店注册，请填写预留手机号" ng-model="user.username" ng-blur="onBlur()"/></label>
+                <p class="password-tips" id="password-tips">请填写手机号！</p>
+            </li>
+            <li>
+                <p>Email <span>*</span></p>
+                <label><input class="reg-input email" type="email" placeholder="如果您已在门店注册，请填写预留邮箱"/></label>
+                <p class="password-tips">请填写邮箱！</p>
+            </li>
+            <li>
+                <p>密码 <span>*</span></p>
+                <label><input class="reg-input" type="password" ng-model="user.password"/></label>
+                <p class="password-tips">请填写密码！</p>
+            </li>
+            <li>
+                <p>再次输入密码 <span>*</span></p>
+                <label><input class="reg-input" type="password" ng-model="user.passwordTwo"/></label>
+                <p class="password-tips">请填写密码！</p>
+            </li>
+            <li><input class="reg-btn" type="button" value="提交" ng-click="regSubmit()"/></li>
+            <li><label><input type="checkbox" checked="checked" class="checkbox"/>我同意</label><span class="deal">注册条款&amp;政策</span></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,195 @@
+<div class="product-details">
+    <p>
+        <a href="" ng-click="goToHome()" class="bk">首页</a> /
+        <a href="" ng-click="goToAllProduct()" class="bk">早春全价商品</a> /
+        <span class="currentProduct">{{DetailsData[0].productInfo.name}}</span>
+    </p>
+    <div class="product-detail-container">
+        <div class="detail-choose-images fl">
+            <div class="detail-prev"></div>
+            <div class="detail-choose-img">
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img1}} alt="img1"/>
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img2}} alt="img1"/>
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img3}} alt="img1"/>
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img4}} alt="img1"/>
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img5}} alt="img1"/>
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img6}} alt="img1"/>
+                <img src={{DetailsData[0].fangDaJing.detailChooseImg.img7}} alt="img1"/>
+            </div>
+            <div class="detail-next"></div>
+        </div>
+        <div class="detail-current-img fl">
+            <img src={{DetailsData[0].fangDaJing.detailCurrentImg.img1}} alt=""/>
+            <div class="inner"></div>
+        </div>
+        <div class="fangDaImg fl">
+            <!--<img src="" alt=""/>-->
+        </div>
+        <div class="detail-commodity fl">
+            <p>{{DetailsData[0].productInfo.name}}</p>
+            <p>{{DetailsData[0].productInfo.codeName}}</p>
+            <p class="product-id">产品编号: {{DetailsData[0].productInfo.number}}</p>
+            <p style="font-size: 18px;"><strong>¥ <span class="product-price">{{DetailsData[0].productInfo.price}}</span>.00</strong></p>
+            <p class="current-color-title">选择颜色</p>
+            <div class="detail-current-color"><img src={{DetailsData[0].fangDaJing.chooseColorImg}} alt="color"/></div>
+            <div class="detail-size">
+                <span>
+                    <select name="" id="detailSelect">
+                        <option value="尺码">---- 尺码 ----</option>
+                        <option value="SR">SR</option>
+                        <option value="MRW">MRW</option>
+                        <option value="XLR">XLR</option>
+                        <option value="MR">MR</option>
+                        <option value="XSR">XSR</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XSRW">XSRW</option>
+                        <option value="LR">LR</option>
+                        <option value="SRW">SRW</option>
+                    </select>
+                    <label class="select-down-arrow" for="detailSelect"></label>
+                </span>
+                <div class="product-number">
+                    <div class="product-number-left fl"><span class="product-current-number">1</span></div>
+                    <div class="product-number-right fl">
+                        <div class="detail-add"></div>
+                        <div class="detail-subtract"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="addToShoppingCart" ng-click="goToShoppingCart(DetailsData[0].fangDaJing.detailChooseImg.img1,DetailsData[0].productInfo.name,DetailsData[0].productInfo.price)"><a href="">加入购物车</a></div>
+            <div class="addToFavorite"><a href="">加入收藏夹</a></div>
+            <p>联系客服？</p>
+            <p class="share">分享：<span class="detail-weChat"></span> | <span class="detail-sina"></span></p>
+            <div class="product-info"><span>产品信息</span><span class="more-choose" id="infoIcon"></span></div>
+            <div class="detail-tips detail-tips-show" id="info">{{DetailsData[0].productInfo.info}}</div>
+            <div class="warm-prompt"><span>温馨提示</span><span class="more-choose" id="promptIcon"></span></div>
+            <div class="detail-tips" id="prompt">{{DetailsData[0].productInfo.prompt}}</div>
+            <div class="delivery-notes" id="notes"><span>配送说明</span><span class="more-choose" id="notesIcon"></span></div>
+            <div class="detail-tips" id="notesTips">{{DetailsData[0].productInfo.delivery}}</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="product-show-details">
+        <h3>细节图片展示</h3>
+        <div class="commodity-detail-img">
+            <div>
+                <img src={{DetailsData[0].showDetailsImg.img1}} alt="img1"/>
+                <p>{{DetailsData[0].describe.DetailsImg1}}</p>
+            </div>
+            <div>
+                <img src={{DetailsData[0].showDetailsImg.img2}} alt="img2"/>
+                <p>{{DetailsData[0].describe.DetailsImg2}}</p>
+            </div>
+            <div>
+                <img src={{DetailsData[0].showDetailsImg.img3}} alt="img3"/>
+                <p>{{DetailsData[0].describe.DetailsImg3}}</p>
+            </div>
+            <div>
+                <img src={{DetailsData[0].showDetailsImg.img4}} alt="img4"/>
+            </div>
+            <div>
+                <img src={{DetailsData[0].showDetailsImg.img5}} alt="img5"/>
+            </div>
+            <div>
+                <img src={{DetailsData[0].showDetailsImg.img6}} alt="img6"/>
+            </div>
+        </div>
+        <div class="size-specification">
+            <h3>尺码表</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th width="190">尺码别名</th>
+                        <th width="166">版型注释</th>
+                        <th width="70">内长</th>
+                        <th width="70">腰围</th>
+                        <th width="70">臀围</th>
+                        <th width="103">前裆长</th>
+                        <th width="103">后裆长</th>
+                        <th width="103">大腿围</th>
+                        <th width="103">膝围</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="190">160/68A/XXSL</td>
+                        <td width="166">XXS裤加长</td>
+                        <td width="70">80</td>
+                        <td width="70">74</td>
+                        <td width="70">90</td>
+                        <td width="103">19.5</td>
+                        <td width="103">29.3</td>
+                        <td width="103">53.5</td>
+                        <td width="103">39</td>
+                    </tr>
+                    <tr>
+                        <td width="190">160/68A/XXSL</td>
+                        <td width="166">XXS裤加长</td>
+                        <td width="70">80</td>
+                        <td width="70">74</td>
+                        <td width="70">90</td>
+                        <td width="103">19.5</td>
+                        <td width="103">29.3</td>
+                        <td width="103">53.5</td>
+                        <td width="103">39</td>
+                    </tr>
+                    <tr>
+                        <td width="190">160/68A/XXSL</td>
+                        <td width="166">XXS裤加长</td>
+                        <td width="70">80</td>
+                        <td width="70">74</td>
+                        <td width="70">90</td>
+                        <td width="103">19.5</td>
+                        <td width="103">29.3</td>
+                        <td width="103">53.5</td>
+                        <td width="103">39</td>
+                    </tr>
+                    <tr>
+                        <td width="190">160/68A/XXSL</td>
+                        <td width="166">XXS裤加长</td>
+                        <td width="70">80</td>
+                        <td width="70">74</td>
+                        <td width="70">90</td>
+                        <td width="103">19.5</td>
+                        <td width="103">29.3</td>
+                        <td width="103">53.5</td>
+                        <td width="103">39</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="comment-count">
+            <h3>累计评价条数（<span>0</span>条）</h3>
+            <p>目前还没有买家留言。</p>
+        </div>
+        <div class="may-you-like">
+            <h3>你可能还喜欢</h3>
+            <div class="commodity">
+                <div class="commodity-container commodity-container-may">
+                    <div class="commodity-img commodity-like1" ng-click="goToDetails()">
+                    </div>
+                    <p ng-click="goToDetails()" class="commodity-title">男纯棉合体拼接短袖针织T恤衫</p>
+                    <p>¥ <span class="product-price">299</span>.00</p>
+                </div>
+                <div class="commodity-container commodity-container-may">
+                    <div class="commodity-img commodity-like2" ng-click="goToDetails()">
+                    </div>
+                    <p ng-click="goToDetails()" class="commodity-title">男装含莱卡修身休闲裤</p>
+                    <p>¥ <span class="product-price">399</span>.00</p>
+                </div>
+                <div class="commodity-container commodity-container-may">
+                    <div class="commodity-img commodity-like3" ng-click="goToDetails()">
+                    </div>
+                    <p ng-click="goToDetails()" class="commodity-title">男装棉质含莱卡弹力修身休闲裤</p>
+                    <p>¥ <span class="product-price">399</span>.00</p>
+                </div>
+                <div class="commodity-container commodity-container-may last">
+                    <div class="commodity-img commodity-like4" ng-click="goToDetails()">
+                    </div>
+                    <p ng-click="goToDetails()" class="commodity-title">男装纯棉圆领字母短袖T恤</p>
+                    <p>¥ <span class="product-price">199</span>.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

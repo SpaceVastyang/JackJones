@@ -1,0 +1,221 @@
+
+/*************************所有商品*******************/
+
+.all-location {
+    padding: 10px 0;
+}
+.all-location a{
+    color: #222222;
+}
+
+/*discount*/
+
+.discount {
+    font-size: 0;
+    padding-bottom: 10px;
+}
+
+/*************************商品列表*******************/
+
+.product-list-title {
+    width: 170px;
+}
+.product-list-container {
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 10px;
+}
+.all-title {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.close-all, .open-all {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    line-height: 13px;
+    margin-right: 3px;
+}
+.close-all {
+    background: url("../images/allProduct/msg_bg.png") 125px 263px;
+}
+.open-all {
+    background: url("../images/allProduct/msg_bg.png") 125px 297px;
+}
+.product-list-title ul {
+    padding: 5px 10px 5px 20px;
+}
+.product-list-title li {
+    padding: 3px 0;
+}
+.product-list-title h5 {
+    padding: 5px 15px;
+    background: #444;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.product-list-title a{
+    color: #222222;
+}
+.product-list-title a:hover {
+    color: #D6D6D6;
+}
+/*checked*/
+.checked {
+    color: #aaa!important;
+}
+
+/*advertisement*/
+
+.advertisement img {
+    margin-bottom: 20px;
+}
+
+
+/********************产品更新区域****************/
+
+.product-container {
+    overflow: hidden;
+}
+.show-operate {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D6D6D6;
+}
+/*collocation*/
+.collocation {
+    display: inline-block;
+    padding: 5px 13px;
+    border: 1px solid #D6D6D6;
+}
+.page-show, .order-by {
+    display: inline-block;
+    margin-left: 24px;
+}
+/*all-count*/
+.all-count, .page-location {
+    display: inline-block;
+    color: #999;
+}
+.all-count {
+    padding-left: 170px;
+}
+.page-location {
+    padding-left: 50px;
+    padding-right: 18px;
+}
+
+/********产品更新底部***********/
+
+.product-container-bottom {
+    border-top: 2px solid #ddd;
+    padding: 10px;
+}
+
+/*底部翻页按钮*/
+
+.each-page-btn {
+    float: left;
+    padding: 1px 6px 0 5px;
+    border: 1px solid #999988;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btn-checked {
+    background: #444;
+    color: #FFFFFF;
+    border: 1px solid #444;
+}
+/*前一页*//*后一页*/
+.pre-page, .next-page {
+    width: 20px;
+    height: 18px;
+    padding: 0;
+    border: none;
+}
+.pre-page {
+    background: url("../images/index/msg_bg.png") 126px 196px;
+}
+.next-page {
+    background: url("../images/index/msg_bg.png") 126px 178px;
+}
+.look{
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px;
+    display: none;
+}
+.commodities {
+    overflow: hidden;
+    width: 764px;
+    min-height: 1979px;
+    margin-top: 20px;
+}
+/*商品*/
+
+.commodity {
+    float: left;
+    text-align: center;
+    margin: 10px 6px 20px 0;
+    min-height: 351px;
+}
+.commodity-container {
+    width: 185px;
+}
+.commodity-container p {
+    padding: 0 15px;
+}
+.commodity-title {
+    cursor: pointer;
+}
+.commodity-title:hover {
+    text-decoration: underline;
+    color: #999988;
+}
+
+
+.commodity-img {
+    height: 296px;
+    text-align: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+/*.commodity-img1 {
+    background: url("../images/allProduct/216114010139_06.jpg") no-repeat top;
+}
+.commodity-container:hover .commodity-img1{
+    background: url("../images/allProduct/216114010139_02.jpg") no-repeat top;
+}
+.commodity-img2 {
+    background: url("../images/allProduct/216132025160_06.jpg") no-repeat top;
+}
+.commodity-container:hover .commodity-img2{
+    background: url("../images/allProduct/216132025160_02.jpg") no-repeat top;
+}
+.commodity-img3 {
+    background: url("../images/allProduct/216114020037_06.jpg") no-repeat top;
+}
+.commodity-container:hover .commodity-img3{
+    background: url("../images/allProduct/216114020037_02.jpg") no-repeat top;
+}
+.commodity-img4 {
+    background: url("../images/allProduct/216132046160_06.jpg") no-repeat top;
+}
+.commodity-container:hover .commodity-img4{
+    background: url("../images/allProduct/216132046160_02.jpg") no-repeat top;
+}*/
+
+.tag-new {
+    display: inline-block;
+    color: #f5bfc1;
+    padding: 1px 6px;
+    border: 1px solid #F5BFC1;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

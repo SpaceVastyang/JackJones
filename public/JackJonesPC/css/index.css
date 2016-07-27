@@ -1,0 +1,325 @@
+
+/*初始化页面*/
+
+body {
+    font-size: 13px;
+    font-family: Arial,'宋体';
+}
+.header, .content, .footer{
+    width: 950px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+
+/***设置快捷样式***/
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.wt{
+    color: white;
+}
+.bk{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.tl:hover{
+    text-decoration: underline;
+}
+.tn:hover{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+
+/************头部分******************/
+
+/*固定边侧栏*/
+
+.fixed-operate {
+    position: absolute;
+    top: 180px;
+    right: 130px;
+}
+.fixed-operate a {
+    text-align: center;
+    width: 63px;
+    height: 21px;
+    padding-top: 40px;
+    color: #FFFFFF;
+    padding-bottom: 1px;
+    display: block;
+    opacity: .9;
+}
+.fixed-operate a:hover {
+    opacity: 1;
+}
+.shop-car {
+    background: url("../images/index/fixIcon1.jpg") no-repeat;
+    cursor: pointer;
+}
+.hot-line {
+    background: url("../images/index/fixIcon2.jpg") no-repeat;
+    cursor: pointer;
+}
+.member {
+    background: url("../images/index/fixIcon4.jpg") no-repeat;
+    cursor: pointer;
+}
+.go-top {
+    background: url("../images/index/fixIcon3.jpg") no-repeat;
+    cursor: pointer;
+}
+.shop-car:hover {
+    background: url("../images/index/fixIcon1white.jpg") no-repeat;
+    color: #050505;
+}
+.hot-line:hover {
+    background: url("../images/index/fixIcon2white.jpg") no-repeat;
+    color: #050505;
+}
+.member:hover {
+    background: url("../images/index/fixIcon4white.jpg") no-repeat;
+    color: #050505;
+}
+.go-top:hover {
+    background: url("../images/index/fixIcon3white.jpg") no-repeat;
+    color: #050505;
+}
+
+/*location*/
+
+.location {
+    overflow: hidden;
+}
+.location p {
+    padding: 10px 0 5px 0;
+}
+.china {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background: url("../images/index/msg_bg.png") 126px -16px;
+    vertical-align: bottom;
+    padding-bottom: 1px;
+    padding-right: 2px;
+}
+
+/*title*/
+
+.title {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.logo {
+    padding-left: 340px;
+}
+
+.search a{
+    display: block;
+    text-align: right;
+    padding-bottom: 5px;
+}
+.searchLabel {
+    border: 1px solid #b3b3b3;
+    display: inline-block;
+}
+.search input {
+    width: 113px;
+    height: 22px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+}
+.searchLabel img {
+    vertical-align: middle;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+/*导航*/
+.menu>ul>li{
+    float: left;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    position: relative;
+    background: #000;
+    height: 48px;
+    width: 118.75px; 
+    text-align: center;
+    /*border: 1px solid #000;*/
+}
+.index{
+	background: #000;
+}
+.menu>ul>li>a{
+    color: #fff;
+    line-height: 48px;
+    display: block;
+/*	border: 1px solid #000;
+	border-bottom: none;*/
+
+}
+.menu>ul>li>a:hover{
+	background: #f8f6f6;
+	color: #000;
+}
+.menu>ul>li:hover>.AllProductSlecete,.new-productSlecete{
+	display: block;
+}
+
+
+/*****二级菜单******/
+
+.AllProductSlecete {
+	position: absolute;	
+	top: 48px;
+	left: -118px;
+	background: #f8f6f6;
+	width: 948px;
+	border: 1px solid #000;
+	display: none;
+	z-index: 10;
+	border-top: none;
+}
+.AllProductSlecete li{
+	float: left;
+	margin: 25px 16px 25px 0;
+	width: 98.5px;	
+
+}
+.AllProductSlecete li.first{
+	margin-left: 25px;
+}
+.AllProductSlecete p{
+	font-size: 13px;
+	line-height: 22px;
+	text-align: left;
+	color: #666;
+	cursor: pointer;
+
+}
+.AllProductSlecete p:hover{
+	color: #000;
+}
+.AllProductSlecete h5{
+	border-bottom: 2px solid #afafaf;
+	text-align: left;
+	padding-bottom: 8px;
+	margin-bottom: 5px;
+}
+
+/*页脚部分*/
+
+.footer {
+    border-top: 1px dashed #000000;
+    margin-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-menu {
+    overflow: hidden;
+    background: #000;
+    margin-top: 25px;
+    padding-left: 30px;
+}
+.footer-menu li{
+    padding: 5px 30px;
+    float: left;
+}
+.footer-menu li>a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-menu li>a:hover {
+    color: #999988;
+}
+
+/*info*/
+
+.info {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.info li{
+    width: 100px;
+    float: left;
+    border-right: 1px solid #b3b3b3;
+    padding-left: 55px;
+    height: 120px;
+}
+.info li>h5 {
+    padding: 6px 0;
+}
+.info li>p {
+    line-height: 16px;
+    cursor: pointer;
+}
+.info li>p:hover {
+    text-decoration: underline;
+    color: #b3b3b3;
+}
+.borderNone {
+    padding-left: 35px!important;
+    text-align: center;
+}
+
+/*brand*/
+
+.brand {
+    overflow: hidden;
+    border-bottom: 1px solid #222222;
+    padding: 0 85px 20px 85px;
+    margin-top: 20px;
+}
+.brand li{
+    float: left;
+    font-size: 0;
+    line-height: 20px;
+    padding: 0 80px;
+}
+.brand li>img {
+    vertical-align: middle;
+}
+.brands {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.weChat, .sina {
+    vertical-align: middle;
+    padding-right: 3px;
+}
+.weChatContainer {
+    position: relative;
+}
+.two-dimension-code {
+    position: absolute;
+    top: 20px;
+    left: -53px;
+    display: none;
+}
+.weChatContainer:hover .two-dimension-code{
+    display: block;
+}
+.footer>p {
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+
+
+

@@ -1,0 +1,113 @@
+<div class="shopping-cart-container">
+    <p><span>首页</span> / <span>购物车</span></p>
+    <p class="shopping-cart-title">购物车</p>
+    <div class="shopping-process">
+        <p class="shopping-process-step1">1 查看购物车</p>
+        <p class="shopping-process-step2">2 填写并核对订单信息</p>
+        <p class="shopping-process-step3">3 成功提交订单</p>
+    </div>
+    <div class="to-be-help">
+        <h4 class="fl">希望得到帮助</h4>
+        <div class="clear"></div>
+        <p><a href="">常见问题</a><a href="">联系我们</a><a href="">配送说明</a><a href="">退换货政策</a></p>
+    </div>
+    <div class="order-summary">
+        <div class="order-summary-title">
+            <strong>订单摘要</strong>
+            <p class="settlement">结算</p>
+        </div>
+        <div class="commodity-lists">
+            <div class="commodity-lists-title">
+                <table>
+                    <thead class="commodity-lists-title-head">
+                    <tr>
+                        <td width="160">
+                            <input type="checkbox" id="commodity-lists-choose-all"/>
+                            <label for="commodity-lists-choose-all">全选</label>
+                        </td>
+                        <td width="150">商品描述</td>
+                        <td width="140">颜色</td>
+                        <td width="150">尺码</td>
+                        <td width="86">数量</td>
+                        <td width="86">单价</td>
+                        <td width="86">总价</td>
+                         <td width="60">操作</td>
+
+                    </tr>
+                    </thead>
+                    <tbody class="commodity-lists-title-body">
+                    <tr ng-repeat="ProductInfo in ProductInfoData" style="border-bottom: 1px solid grey">
+                        <td width="160">
+                            <label><input type="checkbox"/></label>
+                            <img ng-src={{ProductInfo.productImg}} alt="img1"/>
+                        </td>
+                        <td width="150">{{ProductInfo.productName}}</td>
+                        <td width="140">
+                            <select name="" id="">
+                                <option value="深蓝 Dark Blue">深蓝 Dark Blue</option>
+                            </select>
+                        </td>
+                        <td width="150">
+                            <select>
+                                <option value="尺码">---- 尺码 ----</option>
+                                <option value="SR" selected >SR</option>
+                                <option value="MRW">MRW</option>
+                                <option value="XLR">XLR</option>
+                                <option value="MR">MR</option>
+                                <option value="XSR">XSR</option>
+                                <option value="XXL">XXL</option>
+                                <option value="XSRW">XSRW</option>
+                                <option value="LR">LR</option>
+                                <option value="SRW">SRW</option>
+                            </select>
+                        </td>
+                        <td width="86">
+                            <div class="product-number">
+                                <div class="product-number-left fl"><span class="product-current-number">1</span></div>
+                                <div class="product-number-right fl">
+                                    <div class="detail-add" ng-click="detailAdd()"></div>
+                                    <div class="detail-subtract" ng-click="detdetailSubtractailAdd()"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td width="86">
+                            <p>¥ <span class="product-price">{{ProductInfo.productPrice}}</span>.00</p>
+                        </td>
+                        <td width="86">
+                            <p>¥ <span class="product-total-price">399</span>.00</p>
+                        </td>
+                         <td width="60"><button delete-btn>删除</button></td>
+                    </tr>
+
+                    </tbody>
+                    <tfoot class="commodity-lists-title-foot">
+                    <tr>
+                        <td width="160">
+                            <input type="checkbox" id="commodity-lists-choose-alls"/>
+                            <label for="commodity-lists-choose-alls">全选</label>
+                        </td>
+                        <td width="150"><a href="">批量移至收藏夹</a></td>
+                        <td width="140"><a href="">批量删除</a></td>
+                        <td width="150"></td>
+                        <td width="86"></td>
+                        <td width="86"></td>
+                        <td width="86"></td>
+                        <td width="60"></td>
+                    </tr>
+                    </tfoot>
+                </table>
+                <div class="settlement-info">
+                    <p><span>商品总金额：</span><span class="shopping-tag"> RMB </span><span class="money">¥ <span class="shopping-price"> <span class="product-total-price">399</span>.00</span></span></p>
+                    <p class="shopping-discount"><span>优惠：</span><span class="shopping-tag"> RMB </span><span class="money">¥ <span class="shopping-price"> <span class="product-total-price">399</span>.00</span></span></p>
+                    <p class="shopping-discount"><span>优惠的积分：</span><span class="shopping-tag"> PTS </span><span class="money"> <span class="shopping-price">0</span></span></p>
+                    <p class="shopping-count shopping-count1"><span>总计金额(不含运费)：</span><span class="shopping-tag"> RMB </span><span class="money">¥ <span class="shopping-price"> <span class="product-total-price">399</span>.00</span></span></p>
+                    <p class="shopping-count"><span>花费积分：</span><span class="shopping-tag"> PTS </span><span class="money"> <span class="shopping-price">0</span></span></p>
+                </div>
+                <div class="order-summary-title">
+                    <span ng-click="goToAllProduct()">继续购物</span>
+                    <p class="settlement">结算</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

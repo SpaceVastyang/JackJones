@@ -1,0 +1,158 @@
+/*登录部分*/
+.shopping-cart-container {
+    overflow: hidden;
+    padding-top: 20px;
+}
+.shopping-cart-title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #dddddd;
+    background: #000;
+    font-weight: bold;
+    margin: 5px 0 20px 0;
+}
+.shopping-process {
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.shopping-process-step1, .shopping-process-step2, .shopping-process-step3 {
+    float: left;
+    width: 33.2%;
+    margin-right: 1px;
+    padding-bottom: 3px;
+}
+.shopping-process-step1 {
+    font-weight: bold;
+    border-bottom: 10px solid #7F7F7F;
+    color: #7F7F7F;
+}
+.shopping-process-step2, .shopping-process-step3 {
+    border-bottom: 10px solid #E5E5E5;
+}
+
+
+/*to-be-help*/
+
+.to-be-help {
+    overflow: hidden;
+    font-family: "宋体";
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.to-be-help h4 {
+    border-bottom: 2px solid #050505;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.to-be-help a {
+    color: #050505;
+    display: inline-block;
+    padding-right: 10px;
+}
+.to-be-help a:hover {
+    text-decoration: underline;
+    color: #999988;
+}
+
+/*order-summary*/
+
+.order-summary-title {
+    overflow: hidden;
+}
+.order-summary-title strong {
+    font-size: 15px;
+}
+.settlement {
+    display: inline-block;
+    background: #000;
+    padding: 5px 15px;
+    float: right;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+.settlement:hover {
+    opacity: .8;
+}
+
+.commodity-lists {
+    padding-top: 20px;
+}
+/*commodity-lists-title*/
+
+.commodity-lists-title-head, .commodity-lists-title-foot {
+    margin-top: 20px;
+    border: 1px solid #999;
+    background: #F2F2F2;
+    width: 928px;
+}
+.commodity-lists-title-body {
+    border: 1px solid #999988;
+}
+.commodity-lists-title th {
+    padding: 10px;
+    text-align: left;
+}
+.commodity-lists-title td {
+    padding: 10px;
+}
+.commodity-lists-title tbody input {
+    vertical-align: top;
+    margin-top: 60%;
+}
+
+.commodity-lists-title-foot a {
+    color: #050505;
+    text-decoration: underline;
+}
+
+/*settlement-info*/
+
+.settlement-info {
+    text-align: right;
+    padding: 20px;
+    font-size: 12px;
+}
+.settlement-info p {
+    line-height: 24px;
+}
+
+/*money*/
+
+.money {
+    width: 80px;
+    display: inline-block;
+}
+.shopping-price {
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+}
+.shopping-tag {
+    text-align: left;
+    display: inline-block;
+    width: 40px;
+    padding-left: 10px;
+}
+.shopping-discount {
+    color: #D91E25;
+}
+.shopping-count1 {
+    padding-top: 10px;
+}
+.shopping-count {
+    font-weight: bold;
+}
+.order-summary-title span {
+    padding: 5px 20px;
+    border: 1px solid #666;
+    color: #999988;
+    cursor: pointer;
+    display: inline-block;
+}
+.order-summary-title span:hover {
+    background: #F2F2F2;
+    color: #333;
+}

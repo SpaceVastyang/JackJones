@@ -1,0 +1,57 @@
+<div class="home">
+    <div class="slider">
+        <div class="mask">
+            <ul class="slider-container">
+            </ul>
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    
+    <div id="homeDiv" ng-repeat="homeDatas in homeDatas">
+        <div class="head">
+            <div class="head-left fl">
+                <img ng-src={{homeDatas.head.headLeftImg.img1}} alt="1"/>
+            </div>
+            <div class="head-right fr">
+                <img ng-src={{homeDatas.head.headRightImg.img1}} alt="2"/>
+                <img ng-src={{homeDatas.head.headRightImg.img2}} alt="3"/>
+            </div>
+        </div>
+
+        <div class="hot">
+            <img ng-src={{homeDatas.hot.hotTitle.img1}} alt="hot-title"/>
+            <img ng-src={{homeDatas.hot.hotImg.img1}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img2}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img3}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img4}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img5}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img6}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img7}} alt="hot-title" ng-click="goToAllProduct()"/>
+            <img ng-src={{homeDatas.hot.hotImg.img8}} alt="hot-title" ng-click="goToAllProduct()"/>
+        </div>
+
+        <div class="new-products">
+            <img ng-src={{homeDatas.newProducts.img1}} alt="new-title"/>
+            <img ng-src={{homeDatas.newProducts.img2}} alt="new-product"/>
+        </div>
+
+        <div class="recommend">
+            <img ng-src={{homeDatas.recommend.img1}} alt="recommend-title"/>
+            <img ng-src={{homeDatas.recommend.img2}} alt="recommend1"/>
+            <img ng-src={{homeDatas.recommend.img3}} alt="recommend2"/>
+            <img ng-src={{homeDatas.recommend.img4}} alt="recommend3"/>
+            <img ng-src={{homeDatas.recommend.img5}} alt="sports1"/>
+            <img ng-src={{homeDatas.recommend.img6}} alt="sports2"/>
+            <img ng-src={{homeDatas.recommend.img7}} alt="sports3"/>
+            <img ng-src={{homeDatas.recommend.img8}} alt="sports4"/>
+        </div>
+
+        <div class="video">
+            <img ng-src={{homeDatas.video.img1}} alt="video-title"/>
+            <img ng-src={{homeDatas.video.img2}} alt="video1"/>
+        </div>
+    </div>
+
+</div>
