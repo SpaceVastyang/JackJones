@@ -1,0 +1,90 @@
+
+.loginHeader{
+	width: 100%;
+	font-size: 0.18rem;
+	line-height: 0.48rem;
+	font-family: arial;
+	font-weight: 700;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+}
+.loginHeader a{
+	color: #000;
+}
+.back{
+	position: absolute;
+	top: 0;
+	right: 0.25rem; 
+	font-family: 'Microsoft Yahei';
+	font-weight: normal;
+	font-size: 0.12rem;
+}
+.login-h1{
+	line-height: 0.48rem;
+	text-align: center;
+
+}
+.loginBack{
+	background: url("../images/home/icon01.png");
+	width: 0.22rem;
+	height: 0.2rem;
+	background-size: cover; 
+	position: absolute;
+	top: 0.14rem;
+	left: 0.1rem;
+}
+.celBox,.pwBox{
+	border: 1px solid #ccc;
+	width: 90%;
+	height: 0.4rem;
+	font-size: 0.14rem; 
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 0.4rem;
+	overflow: hidden;
+}
+.celImg{
+	width: 0.115rem;
+	height: 0.160rem;
+	margin: 0.12rem 0.1225rem;
+}
+.celInput{
+	border: 0;
+	padding-left: 0.1rem;	
+	outline: none;
+	line-height: 0.4rem;
+	font-size: 0.13rem; 
+	color: #999;
+	
+}
+.pwBox{
+	margin-top: 0.3rem;
+}
+.box{
+	width: 0.36rem;
+	height: 0.4rem;
+	display: block;
+	border-right: 1px solid #ccc;
+}
+.extra{
+	font-size: 0.12rem;
+	width: 90%;
+	margin: 0.22rem auto;
+}
+.extra a{
+	text-decoration: none;
+	color: blue;
+}
+.btn{
+	width: 90%;
+	font-size: 0.14rem;
+	font-weight: bold;
+	color: #fff;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+}

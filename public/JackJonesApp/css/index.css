@@ -1,0 +1,377 @@
+body {
+    font-family: 'Microsoft Yahei', helvetica, arial;
+    background: #fbfbfb;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+/*header*/
+.header{
+    width: 100%;
+    height: 0.5rem;
+    background: #fbfbfb;
+    overflow: hidden;
+    border-bottom: 1px solid #999988;
+    position: fixed;
+    top: 0.01rem;
+    z-index: 100;
+}
+.topBox{
+	height: 0.5rem;
+	margin-top: 0.01rem;
+}
+.collect{
+	background: url("../images/home/icon01.png") -0.83rem 0;
+	width: 0.30rem;
+	height: 0.30rem;
+	background-size: cover;
+	margin: 0.1rem 0.05rem;
+}
+.logo{
+	background: url("../images/home/logo.png");
+	width: 1.2rem;
+	height: 0.15rem;
+	background-size: 100% 100%;
+	margin: 0.175rem 0.2rem 0.175rem 0.55rem;
+}
+.find{
+	background: url("../images/home/icon01.png") -1.56rem 0;
+	width: 0.30rem;
+	height: 0.30rem;
+	background-size: cover;
+	margin-top: 0.1rem;
+}
+.user{
+	background: url("../images/home/icon01.png") -2.48rem 0;
+	width: 0.30rem;
+	height: 0.30rem;
+	background-size: cover;
+	margin: 0.1rem 0.05rem;
+}
+.slide{
+	height: 3.65rem;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+    margin-bottom: 0.05rem;
+}
+.slider{
+	width: 500%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.img{
+	font-size: 0; 
+	width: 20%;
+    float: left;
+}
+.icons{
+	overflow: hidden;
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	z-index: 99;
+}
+.icons li{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 0.025rem;
+	border: 1px solid #000;
+	float: left;
+	margin-right: 0.04rem;
+}
+.icons li:nth-child(1){
+	background: #000;
+}
+
+/*footer*/
+footer {
+    overflow: hidden;
+    padding-top: 2%;
+    margin: 0.2rem 0;
+}
+
+.tele,.copyright, .switch-to-pc {
+    margin: auto;
+    font-size: 0;
+}
+.tele {
+    width: 60%;
+}
+.tele img {
+    width: 100%;
+}
+.switch-to-pc {
+    width: 50%;
+    padding-top: 1%;
+}
+.switch-to-pc img:nth-child(1) {
+    width: 45%;
+}
+.switch-to-pc img:nth-child(2) {
+    width: 55%;
+}
+.copyright {
+    width: 60%;
+    padding-top: 3%;
+}
+.copyright img {
+    width: 100%;
+}
+
+
+/***********classListCSS***************/
+
+
+.commodity-container {
+    padding: .1rem 0;
+}
+/*commodity-list-title*/
+
+.commodity-list-title {
+    width: 100%;
+    height: .32rem;
+    text-align: center;
+    line-height: .32rem;
+}
+.commodity-list-title li {
+    border: .01rem solid #050505;
+    border-right: none;
+    float: left;
+    width: 24.65%;
+    font-size: .14rem;
+}
+.order-by {
+    background: #050505;
+    color: #F2F2F2;
+}
+
+/*commodity-lists*/
+
+.commodity-lists {
+    width: 100%;
+}
+.commodity-block {
+    width: 50%;
+    float: left;
+    padding-top: .1rem;
+    font-size: 0;
+}
+.commodity-block p {
+    padding-top: .1rem;
+    font-size: .12rem;
+    text-align: center;
+}
+
+/*commodity-to-top*/
+
+.commodity-to-top {
+    position: fixed;
+    right: .3rem;
+    bottom: .3rem;
+    width: 5%;
+    font-size: 0;
+}
+.commodity-to-top img {
+    width: 100%;
+}
+
+/***********classInfoCSS***************/
+
+.details-slide-container {
+    font-size: 0;
+}
+.details-to-top {
+    width: 5%;
+}
+.details-to-top ul {
+    position: fixed;
+    top: 45%;
+    left: 6%;
+}
+.details-to-top li {
+    width: .05rem;
+    height: .05rem;
+    border-radius: .05rem;
+    margin-bottom: .03rem;
+    border: .01rem solid #050505;
+}
+.details-to-top img {
+    width: 5%;
+    position: fixed;
+    top: 53.5%;
+    left: 3.595%;
+}
+
+/*details-commodity-info*/
+
+.details-commodity-info {
+    width: 96%;
+    padding: 2%;
+    font-size: .12rem;
+}
+.details-commodity-info h2 {
+    font-size: .15rem;
+}
+/*commodity-id*/
+
+.commodity-id {
+    padding-bottom: 3%;
+}
+.commodity-id li{
+    font-size: .12rem;
+    color: #666;
+    line-height: .2rem;
+}
+.commodity-price-container {
+    padding: .5% 0;
+}
+.commodity-price {
+    font-size: .14rem;
+}
+
+/*details-choose-color*/
+.details-choose-color, .details-choose-size {
+    overflow: hidden;
+    padding-bottom: 3%;
+}
+.details-choose-color p, .details-choose-size p, .details-choose-count {
+    padding-bottom: 2%;
+}
+.details-choose-color li, .details-choose-size li {
+    float: left;
+    margin-right: 2%;
+    width: 30%;
+    height: .22rem;
+    line-height: .22rem;
+    text-align: center;
+    border: .01rem solid #050505;
+    font-size: 0.12rem;
+    margin-bottom: 2%;
+}
+.details-choose-size li {
+    color: #666;
+}
+.bk {
+    color: #000;
+}
+.fz14 {
+    font-size: .14rem;
+}
+
+/*details-current-count*/
+
+.details-choose-count {
+    border-bottom: .01rem solid #050505;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.details-choose-count p {
+    padding-bottom: 2%;
+}
+.details-choose-count span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.details-current-count {
+    border: .01rem solid #050505;
+    display: inline-block;
+    font-size: 0;
+}
+.details-current-count-number {
+    width: .5rem;
+    font-size: .12rem;
+}
+.details-minus, .details-add {
+    width: .28rem;
+    height: .28rem;
+    background: #000;
+    color: #FFFFFF;
+    font-size: .2rem;
+    line-height: .25rem;
+}
+.details-minus {
+    font-size: .3rem;
+    opacity: .4;
+}
+
+/*details-operate*/
+
+.details-operate div {
+    height: .42rem;
+    line-height: .42rem;
+    text-align: center;
+    color: #050505;
+    border: .01rem solid #050505;
+    font-size: .15rem;
+}
+.details-add-to-shopping-cart {
+    width: 48%;
+    margin-right: 1%;
+    display: inline-block;
+}
+.details-buy-now {
+    width: 48%;
+    background: #000;
+    color: #fff!important;
+    display: inline-block;
+}
+.details-free {
+    width: 99%;
+    margin-top: 5%;
+}
+.details-to-top img{
+    width: 0.22rem;
+    height: 0.22rem;
+}
+
+
+
+/**************shoppingCarCSS********************************/
+
+.gr {
+    color: #c0c0c0;
+}
+/*shopping-cart-container*/
+
+.shopping-cart-container {
+    padding-top: 2%;
+    font-size: .12rem;
+}
+.shopping-cart-block {
+    width: 50%;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+.shopping-cart-block p {
+    line-height: .18rem;
+}
+.shopping-delete, .shopping-buy {
+    width: 40%;
+    height: .24rem;
+    line-height: .24rem;
+    text-align: center;
+    margin: 4%;
+    background: #FFFFFF;
+    border: .01rem solid #050505;
+    float: left;
+}
+.shopping-buy {
+    color: #FFFFFF;
+    background: #000;
+}

@@ -1,0 +1,144 @@
+.details-slide-container {
+    font-size: 0;
+}
+.details-to-top {
+    width: 5%;
+}
+.details-to-top ul {
+    position: fixed;
+    top: 45%;
+    left: 5%;
+}
+.details-to-top li {
+    width: .05rem;
+    height: .05rem;
+    border-radius: .05rem;
+    margin-bottom: .03rem;
+    border: .01rem solid #050505;
+}
+.details-to-top img {
+    width: 5%;
+    position: fixed;
+    top: 53.5%;
+    left: 3.595%;
+}
+
+/*details-commodity-info*/
+
+.details-commodity-info {
+    width: 96%;
+    padding: 2%;
+    font-size: .12rem;
+}
+.details-commodity-info h2 {
+    font-size: .15rem;
+}
+/*commodity-id*/
+
+.commodity-id {
+    padding-bottom: 3%;
+}
+.commodity-id li{
+    font-size: .12rem;
+    color: #666;
+    line-height: .2rem;
+}
+.commodity-price-container {
+    padding: .5% 0;
+}
+.commodity-price {
+    font-size: .14rem;
+}
+
+/*details-choose-color*/
+.details-choose-color, .details-choose-size {
+    overflow: hidden;
+    padding-bottom: 3%;
+}
+.details-choose-color p, .details-choose-size p, .details-choose-count {
+    padding-bottom: 2%;
+}
+.details-choose-color li, .details-choose-size li {
+    float: left;
+    margin-right: 2%;
+    width: 30%;
+    height: .22rem;
+    line-height: .22rem;
+    text-align: center;
+    border: .01rem solid #050505;
+    font-size: 0.12rem;
+    margin-bottom: 2%;
+}
+.details-choose-size li {
+    color: #666;
+}
+.bk {
+    color: #000;
+}
+.fz14 {
+    font-size: .14rem;
+}
+
+/*details-current-count*/
+
+.details-choose-count {
+    border-bottom: .01rem solid #050505;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+.details-choose-count p {
+    padding-bottom: 2%;
+}
+.details-choose-count span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.details-current-count {
+    border: .01rem solid #050505;
+    display: inline-block;
+    font-size: 0;
+}
+.details-current-count-number {
+    width: .5rem;
+    font-size: .12rem;
+}
+.details-minus, .details-add {
+    width: .28rem;
+    height: .28rem;
+    background: #000;
+    color: #FFFFFF;
+    font-size: .2rem;
+    line-height: .25rem;
+}
+.details-minus {
+    font-size: .3rem;
+    opacity: .4;
+}
+
+/*details-operate*/
+
+.details-operate div {
+    height: .42rem;
+    line-height: .42rem;
+    text-align: center;
+    color: #050505;
+    border: .01rem solid #050505;
+    font-size: .15rem;
+}
+.details-add-to-shopping-cart {
+    width: 48%;
+    margin-right: 1%;
+    display: inline-block;
+}
+.details-buy-now {
+    width: 48%;
+    background: #000;
+    color: #fff!important;
+    display: inline-block;
+}
+.details-free {
+    width: 99%;
+    margin-top: 5%;
+}
